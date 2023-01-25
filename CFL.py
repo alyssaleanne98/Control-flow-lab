@@ -13,6 +13,15 @@ if letter == "a":
     print("This is a vowel")
 if letter == "e":
     print("This is a vowel")
+if letter == "i":
+    print("This is a vowel")
+if letter == "o":
+    print("This is a vowel")
+if letter == "u":
+    print("This is a vowel")
+else: 
+    print("Not a vowel!")
+
 
 # 3. Print one of following messages (substituting the letter for x):
 #      - The letter x is a vowel
