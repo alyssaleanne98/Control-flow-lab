@@ -4,34 +4,21 @@
 # 1. Prompts the user to enter a letter in the alphabet:
 #      Please enter a letter from the alphabet (a-z or A-Z):
 
-letter = input('Please enter a letter from the alphabet (a-z):')
-print(f'You entered {letter}')
-
 # 2. Write the code that determines whether the letter entered is a vowel
-
-if letter == "a":
-    print("This is a vowel")
-if letter == "e":
-    print("This is a vowel")
-if letter == "i":
-    print("This is a vowel")
-if letter == "o":
-    print("This is a vowel")
-if letter == "u":
-    print("This is a vowel")
-else: 
-    print("Not a vowel!")
-
-
 # 3. Print one of following messages (substituting the letter for x):
 #      - The letter x is a vowel
 #      - The letter x is a consonant
 
-if letter == "x":
-    print("The letter x is a consonant")
-    
+
+letter = input('Please enter a letter from the alphabet (a-z):') #prompt user to enter letter in alphabet
+if letter in ["a", "e", "i", "o", "u"]: #determines if the letter is a vowel 
+    print(f'The letter {letter} is a vowel ')
+else: 
+    print(f'The letter {letter} is a constant ')
+
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
+
 
 
 
@@ -43,6 +30,9 @@ if letter == "x":
 # 2. Print the following message:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
+
+# phrase = input('Please enter a word or phrase')
+# print(f'What you entered is xx characters long')
 
 
 # exercise-03 Calculate Dog Years
