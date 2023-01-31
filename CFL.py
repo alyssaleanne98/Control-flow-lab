@@ -31,8 +31,12 @@ else:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 
-# phrase = input('Please enter a word or phrase')
-# print(f'What you entered is xx characters long')
+phrase = input('Please enter a word or phrase') #prompts the user to enter a word/phrase    
+print(f'What you entered is xx characters long')
+
+
+
+
 
 
 # exercise-03 Calculate Dog Years
@@ -46,6 +50,15 @@ else:
 # 3. Prints the answer in the following format:
 #      The dog's age in dog years is xx
 # Hint:  Use the int() function to convert the string returned from input() into an integer
+
+
+age = int(input(f'Input a dogs age in human years:')) #prompt user to enter dog's age. use int()  to cast the return value of the function to call to an integer. 
+
+if age <= 2: #calculate first two years count as 10 years each 
+    dogage = age * 10
+else: #calculate remaining years as 7 each 
+    dogage = age * 7 
+print("The dog's age in dog years is", dogage)
 
 
 # exercise-04 What kind of Triangle?
