@@ -31,8 +31,10 @@ else:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 
-phrase = input('Please enter a word or phrase') #prompts the user to enter a word/phrase    
-print(f'What you entered is xx characters long')
+phrase =''
+while(phrase != 'quit'):
+    phrase = input('Please enter a word or phrase') #prompts the user to enter a word/phrase    
+    print(f'What you entered is {len(phrase)} characters long') #len() function returns the number of items in an object. When the object is a string, the len() function returns the number of characters in the string.
 
 
 
@@ -77,6 +79,13 @@ print("The dog's age in dog years is", dogage)
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
 
+triangle = input("Enter the lengths of three side of a triangle:") #prompts the user to enter the three lengths 
+
+
+
+
+
+
 
 # exercise-05 Fibonacci sequence for first 50 terms
 
@@ -91,6 +100,9 @@ print("The dog's age in dog years is", dogage)
 #      term: 5 / number: 5
 #      etc.
 # Hint: The next number is found by adding the two numbers before it
+
+
+#Fibonacci sequence is a series of numbers in which each number is the sum of the two that precede it. 
 
 
 
@@ -115,3 +127,10 @@ print("The dog's age in dog years is", dogage)
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
 
+# month = input("Enter the month (as three characters")
+# day = input("Enter the day of the month:")
+
+# if month in ("Dec", "Jan", "Feb", "Mar",):
+#     print("Winter")
+# elif month in ("Mar", "Apr", "May", "Jun")
+#     print("Spring")
