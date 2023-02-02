@@ -37,10 +37,6 @@ while(phrase != 'quit'):
     print(f'What you entered is {len(phrase)} characters long') #len() function returns the number of items in an object. When the object is a string, the len() function returns the number of characters in the string.
 
 
-
-
-
-
 # exercise-03 Calculate Dog Years
 
 # Write the code that:
@@ -78,6 +74,16 @@ print("The dog's age in dog years is", dogage)
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
+a = input("Side A: ")
+b = input("Side B: ")
+c = input ("Side C: ")
+
+if a == b and b == c:
+    print(f'This is a equalateral triangle!')
+elif a == b or a == c or b == c:
+    print(f'This is a isosceles triangle!')
+else: 
+    print("This is a scalene triangle!")
 
 triangle = input("Enter the lengths of three side of a triangle:") #prompts the user to enter the three lengths 
 
@@ -133,4 +139,4 @@ triangle = input("Enter the lengths of three side of a triangle:") #prompts the 
 # if month in ("Dec", "Jan", "Feb", "Mar",):
 #     print("Winter")
 # elif month in ("Mar", "Apr", "May", "Jun")
-#     print("Spring")
+#     print("Spring")a
