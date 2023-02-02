@@ -89,10 +89,6 @@ triangle = input("Enter the lengths of three side of a triangle:") #prompts the 
 
 
 
-
-
-
-
 # exercise-05 Fibonacci sequence for first 50 terms
 
 # Write the code that:
@@ -136,7 +132,7 @@ triangle = input("Enter the lengths of three side of a triangle:") #prompts the 
 # month = input("Enter the month (as three characters")
 # day = input("Enter the day of the month:")
 
-# if month in ("Dec", "Jan", "Feb", "Mar",):
-#     print("Winter")
-# elif month in ("Mar", "Apr", "May", "Jun")
-#     print("Spring")a
+if month in ("Dec", "Jan", "Feb", "Mar",):
+    print("Winter")
+elif month in ("Mar", "Apr", "May", "Jun")
+    print("Spring")
