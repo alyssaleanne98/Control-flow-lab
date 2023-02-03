@@ -104,6 +104,15 @@ triangle = input("Enter the lengths of three side of a triangle:") #prompts the 
 # Hint: The next number is found by adding the two numbers before it
 #Fibonacci sequence is a series of numbers in which each number is the sum of the two that precede it. 
 
+x = 0
+y = 1
+
+num = 0 
+for i in range(51):
+    print(i, num)
+    x = y
+    y = num
+    num = x + y
 
 
 
@@ -140,12 +149,12 @@ elif month in ("Jun", "Jul", "Aug", "Sep"):
 elif month in ("Sep", "Oct", "Nov", "Dec"):
     print("Fall")
 
-if (month == 'Dec') and (day >=21):
+if (month == 'Dec') and (day >20):
     print("Winter")
-elif (month == 'Mar') and (day >= 20):
+elif (month == 'Mar') and (day > 19):
     print("Spring")
-elif (month == 'Jun') and (day >= 21):
+elif (month == 'Jun') and (day > 20):
     print('Summer')
-elif (month == 'Sep') and (day >= 22):
+elif (month == 'Sep') and (day > 21):
     print('Fall')
 
