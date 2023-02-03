@@ -102,9 +102,8 @@ triangle = input("Enter the lengths of three side of a triangle:") #prompts the 
 #      term: 5 / number: 5
 #      etc.
 # Hint: The next number is found by adding the two numbers before it
-
-
 #Fibonacci sequence is a series of numbers in which each number is the sum of the two that precede it. 
+
 
 
 
@@ -129,10 +128,24 @@ triangle = input("Enter the lengths of three side of a triangle:") #prompts the 
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
 
-# month = input("Enter the month (as three characters")
-# day = input("Enter the day of the month:")
+month = input("Enter the month (as three characters)")
+day = input("Enter the day of the month:")
 
 if month in ("Dec", "Jan", "Feb", "Mar",):
     print("Winter")
-elif month in ("Mar", "Apr", "May", "Jun")
+elif month in ("Mar", "Apr", "May", "Jun"):
     print("Spring")
+elif month in ("Jun", "Jul", "Aug", "Sep"):
+    print("Summer")
+elif month in ("Sep", "Oct", "Nov", "Dec"):
+    print("Fall")
+
+if (month == 'Dec') and (day >=21):
+    print("Winter")
+elif (month == 'Mar') and (day >= 20):
+    print("Spring")
+elif (month == 'Jun') and (day >= 21):
+    print('Summer')
+elif (month == 'Sep') and (day >= 22):
+    print('Fall')
+
